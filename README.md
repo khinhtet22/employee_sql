@@ -1,48 +1,57 @@
 # Employee Analytics Project
-Overview
-This project analyzes employee data to uncover insights on workforce demographics, salary trends, department transfers, and gender pay gaps. The data was sourced from a publicly available dataset hosted on GitHub.
 
-SQL queries were developed to extract key metrics and relationships, and these were visualized using Power BI to create interactive dashboards.
+## Overview
 
-Data Source
-The dataset was obtained from GitHub:
-[https://github.com/<username>/<repository>]
-(replace this with the actual GitHub repo URL)
+This project analyzes employee data to uncover insights on workforce demographics, salary trends, department transfers, and gender pay gaps. The dataset is sourced from a publicly available dataset hosted on GitHub.
 
-It includes tables such as:
+SQL queries were developed to extract key metrics and relationships, and Power BI was used to create interactive dashboards for data visualization.
 
-employees (employee details)
+---
 
-salaries (salary history)
+## Data Source
 
-departments (department info)
+- Dataset URL: [https://github.com/<username>/<repository>](https://github.com/<username>/<repository>)  
+- The dataset includes tables such as:
+  - `employees` — employee personal details
+  - `salaries` — salary history records
+  - `departments` — department information
+  - `dept_emp` — employee department assignments
+  - `dept_manager` — department managers
+  - `titles` — job titles held by employees
 
-dept_emp (employee department assignments)
+- The data is modeled on a real-world company employee database and uses `to_date = '9999-01-01'` to indicate active records.
 
-dept_manager (department managers)
+---
 
-titles (employee job titles)
+## SQL Queries
 
-The dataset is a snapshot modeled after a real-world company database.
+The project contains the following key SQL queries:
 
-SQL Queries
-(same as before)
+- **Active Managers**: Lists current managers with age, tenure, and department.
+- **Gender Contributions**: Gender distribution in each department.
+- **Top 10 Highest Salaries**: Employees with highest current salaries.
+- **Top 3 Salaries per Department**: Ranking salaries department-wise.
+- **Salary Growth Trends**: Employees with significant salary increases.
+- **Gender Pay Gap Analysis**: Salary differences by gender for each role.
+- **Highest Entry Salaries Post-1980**: Entry salary stats by job and department.
+- **Employee Transfer Frequency**: Employees who transferred departments.
+- **Department Salary and Employee Counts**: Summary of headcount and salary distribution by department.
 
-Using the SQL Queries in BI
-(same as before)
+*(For full SQL query scripts, see the `queries` folder or `sql_queries.sql` file in this repository.)*
 
-How to Run
-(same as before)
+---
 
-Notes
-The dataset uses to_date = '9999-01-01' to mark active records.
+## Using the SQL Queries in Power BI
 
-Queries assume a MySQL-compatible environment (adjust for your SQL engine if needed).
+- Connect Power BI Desktop to your SQL database.
+- Import and execute the provided queries to load cleaned data tables.
+- Use Power BI visuals (charts, tables, slicers) to build dashboards around the insights.
+- Set up data refresh schedules for up-to-date reporting.
 
-Window functions such as RANK() and LEAD() are used for ranking and transfer analysis.
+---
 
-References
-Dataset repository: https://github.com/<username>/<repository>
+## How to Run
 
-Contact
-For questions or suggestions, contact [Your Name] — your.email@example.com
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/<username>/<repository>.git
