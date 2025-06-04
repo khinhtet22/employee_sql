@@ -9,8 +9,11 @@ SQL queries were developed to extract key metrics and relationships, and Power B
 ---
 
 ## Data Source
+The original dataset was created by **Fusheng Wang** and **Carlo Zaniolo** and is available at:
+- Dataset URL: 
+- [TimeCenter Software page](http://www.cs.aau.dk/TimeCenter/software.htm)
+- [Employee Temporal Dataset ZIP file](http://www.cs.aau.dk/TimeCenter/Data/employeeTemporalDataSet.zip)
 
-- Dataset URL: [https://github.com/<username>/<repository>](https://github.com/<username>/<repository>)  
 - The dataset includes tables such as:
   - `employees` — employee personal details
   - `salaries` — salary history records
